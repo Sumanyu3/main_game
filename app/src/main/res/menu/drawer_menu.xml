@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_play_store"
+            android:icon="@drawable/ic_message"
+            android:title="Rate on Play Store" />
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/ic_chat"
+            android:title="Donate" />
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_share"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_send"
+            android:title="Contact Us" />
+    </group>
+</menu>
