@@ -9,14 +9,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".wordSearch_goat"></activity>
+        <activity
+            android:name=".supergirls_games"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wordSearch_supergirls"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wordSearch_mom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mom_games"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".goat_games"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

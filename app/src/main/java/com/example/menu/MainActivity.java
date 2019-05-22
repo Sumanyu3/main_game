@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -34,6 +36,40 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer,toolbar, R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        //Defining Buttons and sending to next page
+
+        Button goatGame = findViewById(R.id.goatButton);
+        goatGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, goat_games.class);
+                startActivity(intent);
+            }
+        });
+
+        Button momButton = findViewById(R.id.momButton);
+        momButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, mom_games.class);
+                startActivity(intent);
+            }
+        });
+
+        Button supergirlsButton = findViewById(R.id.supergirlsButton);
+        supergirlsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, supergirls_games.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
     }
 
     @Override
