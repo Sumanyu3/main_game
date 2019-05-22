@@ -16,7 +16,7 @@ public class goat_games extends Activity {
         game1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(goat_games.this, wordSearch_goat.class);
+                Intent intent = new Intent(goat_games.this, instructions_word_search_goat.class);
                 startActivity(intent);
             }
         });
