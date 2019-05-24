@@ -1,5 +1,7 @@
 package com.example.menu;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +18,7 @@ import java.util.ArrayList;
 
 
 
-public class wordSearch_goat extends AppCompatActivity implements View.OnClickListener {
+public class wordSearch_goat extends Activity implements View.OnClickListener {
 
     private Button[][] buttons = new Button[4][4];
     private String word;
@@ -75,11 +77,14 @@ public class wordSearch_goat extends AppCompatActivity implements View.OnClickLi
             btnCounter=btnCounter+1;
 
             if(Math.abs(prev.getId()-v.getId())==1) {
+                Log.d(TAG, "onClick: prev id" + prev.getId());
+                Log.d(TAG, "onClick: curr id" + v.getId());
+                Log.d(TAG, "onClick: entered 1");
                 if(btnCounter==2){
                     if(Math.abs(prev.getId()-v.getId())==1){
                         horizontal_check=1;
                     }
-                    else if(Math.abs(prev.getId()-v.getId())==4){
+                    else if(Math.abs(prev.getId()-v.getId())==8){
                         horizontal_check=0;
                     }
                 }
@@ -137,13 +142,16 @@ public class wordSearch_goat extends AppCompatActivity implements View.OnClickLi
 
             }
 
-            else if(Math.abs(prev.getId()-v.getId())==4){
+            else if (Math.abs(prev.getId()-v.getId())==8){
+                Log.d(TAG, "onClick: prev id" + prev.getId());
+                Log.d(TAG, "onClick: curr id" + v.getId());
+                Log.d(TAG, "onClick: entered 4");
                 //btnCounter=btnCounter+1;
                 if(btnCounter==2){
                     if(Math.abs(prev.getId()-v.getId())==1){
                         horizontal_check=1;
                     }
-                    else if(Math.abs(prev.getId()-v.getId())==4){
+                    else if(Math.abs(prev.getId()-v.getId())==8){
                         horizontal_check=0;
                     }
                 }
@@ -201,6 +209,9 @@ public class wordSearch_goat extends AppCompatActivity implements View.OnClickLi
             }
 
             else{
+                Log.d(TAG, "onClick: prev id" + prev.getId());
+                Log.d(TAG, "onClick: curr id" + v.getId());
+                Log.d(TAG, "onClick: entered rest");
                 while(clicked_btns.size()!=0){
                     clicked_btns.get(0).setBackgroundResource(R.drawable.default_button);
                     clicked_btns.remove(0);
@@ -218,4 +229,6 @@ public class wordSearch_goat extends AppCompatActivity implements View.OnClickLi
 
 
     }
+
+
 }

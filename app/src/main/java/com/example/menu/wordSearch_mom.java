@@ -1,6 +1,7 @@
 package com.example.menu;
 
 
+import android.app.Activity;
 import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 
 //If correct answer already given then remove from list
 
-    public class wordSearch_mom extends AppCompatActivity implements View.OnClickListener {
+    public class wordSearch_mom extends Activity implements View.OnClickListener {
 
         private Button[][] buttons = new Button[4][6];
         private String word;
@@ -80,11 +81,13 @@ import java.util.ArrayList;
                 btnCounter=btnCounter+1;
 
                 if(Math.abs(prev.getId()-v.getId())==1) {
+                    Log.d(TAG, "onClick: prev id" + prev.getId());
+                    Log.d(TAG, "onClick: curr id" + v.getId());
                     if(btnCounter==2){
                         if(Math.abs(prev.getId()-v.getId())==1){
                             horizontal_check=1;
                         }
-                        else if(Math.abs(prev.getId()-v.getId())==6){
+                        else if(Math.abs(prev.getId()-v.getId())==8){
                             horizontal_check=0;
                         }
                     }
@@ -151,13 +154,15 @@ import java.util.ArrayList;
 
                 }
 
-                else if(Math.abs(prev.getId()-v.getId())==6){
+                else if(Math.abs(prev.getId()-v.getId())==8){
+                    Log.d(TAG, "onClick: prev id" + prev.getId());
+                    Log.d(TAG, "onClick: curr id" + v.getId());
                     //btnCounter=btnCounter+1;
                     if(btnCounter==2){
                         if(Math.abs(prev.getId()-v.getId())==1){
                             horizontal_check=1;
                         }
-                        else if(Math.abs(prev.getId()-v.getId())==6){
+                        else if(Math.abs(prev.getId()-v.getId())==8){
                             horizontal_check=0;
                         }
                     }
@@ -224,6 +229,8 @@ import java.util.ArrayList;
                 }
 
                 else{
+                    Log.d(TAG, "onClick: prev id" + prev.getId());
+                    Log.d(TAG, "onClick: curr id" + v.getId());
                     while(clicked_btns.size()!=0){
                         clicked_btns.get(0).setBackgroundResource(R.drawable.default_button);
                         clicked_btns.remove(0);

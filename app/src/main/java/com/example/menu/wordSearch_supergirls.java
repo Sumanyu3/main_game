@@ -1,5 +1,6 @@
 package com.example.menu;
 
+import android.app.Activity;
 import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 
 
-public class wordSearch_supergirls extends AppCompatActivity implements View.OnClickListener {
+public class wordSearch_supergirls extends Activity implements View.OnClickListener {
 
     private Button[][] buttons = new Button[6][8];
     private String word;
