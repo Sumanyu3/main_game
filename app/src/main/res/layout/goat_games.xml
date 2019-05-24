@@ -13,19 +13,17 @@
         android:layout_width="132dp"
         android:layout_height="66dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/game_menu_button_3"
         android:text="Word Search"
         android:textColor="#ffffff"
-        android:textStyle="bold"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Heading"
         app:layout_constraintVertical_bias="0.111" />
@@ -57,22 +55,20 @@
         android:layout_width="132dp"
         android:layout_height="66dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/game_menu_button_3"
         android:text="Maze"
         android:textColor="#ffffff"
-        android:textStyle="bold"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/game2"
-        app:layout_constraintVertical_bias="0.238" />
+        app:layout_constraintVertical_bias="0.241" />
 
     <Button
         android:id="@+id/game4"
@@ -115,4 +111,56 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.059" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/play_icon_1"
+        app:layout_constraintBottom_toBottomOf="@+id/game1"
+        app:layout_constraintEnd_toStartOf="@+id/game1"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/game1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/play_icon_1"
+        app:layout_constraintBottom_toBottomOf="@+id/game3"
+        app:layout_constraintEnd_toStartOf="@+id/game3"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/game3" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/play_icon_1"
+        app:layout_constraintBottom_toBottomOf="@+id/game2"
+        app:layout_constraintEnd_toStartOf="@+id/game2"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/game2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/play_icon_1"
+        app:layout_constraintBottom_toBottomOf="@+id/game4"
+        app:layout_constraintEnd_toStartOf="@+id/game4"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/game4" />
 </android.support.constraint.ConstraintLayout>

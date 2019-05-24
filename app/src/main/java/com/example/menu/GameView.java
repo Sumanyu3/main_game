@@ -145,16 +145,16 @@ public class GameView extends View
         View someView = findViewById(R.id.view2);
         someView.setBackgroundResource(R.drawable.grass);
 
-        int width = getWidth();
-        int height = getHeight();
+        float width = (float)0.85*getWidth();
+        float height = (float)0.85*getHeight();
 
         if(width/height < COLS/ROWS)
             cellsize = width/(COLS+1);
         else
             cellsize = height/(ROWS+1);
 
-        hMargin = (width - COLS*cellsize)/2;
-        vMargin = (height - ROWS*cellsize)/2;
+        hMargin = (float)0.1*(width - COLS*cellsize)/2;
+        vMargin = (float)2.5*(height - ROWS*cellsize)/2;
 
         canvas.translate(hMargin,vMargin);
 
