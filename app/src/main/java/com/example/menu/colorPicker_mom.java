@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -16,32 +18,24 @@ public class colorPicker_mom extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colorpicker_mom);
+        Button submit = findViewById(R.id.submit);
 
         final EditText simpleEditText = (EditText) findViewById(R.id.editText);
-        simpleEditText.addTextChangedListener(new TextWatcher() {
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                Log.d(TAG, "onTextChanged: Before Text Changed");
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                Log.d(TAG, "onTextChanged: Text Changed");
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if(simpleEditText.getText().toString()==""){
-                    //
-                }
-                else if((Integer.parseInt(simpleEditText.getText().toString())<=10 && (Integer.parseInt(simpleEditText.getText().toString())>=8))){
-                    Log.d(TAG, "onTextChanged: Correct Answer");
+            public void onClick(View v) {
+                String curr_txt = simpleEditText.getText().toString();
+                if(curr_txt.equals("8")||curr_txt.equals("9")||curr_txt.equals("10")){
+                    Log.d(TAG, "onClick: Correct Answer");
                     Toast.makeText(colorPicker_mom.this, "Correct", Toast.LENGTH_SHORT).show();
                 }
-                Log.d(TAG, "onTextChanged: After Text Changed");
+                else{
+                    Log.d(TAG, "onClick: Incorrect");
+                    Toast.makeText(colorPicker_mom.this, "Try Again", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
 //        String editTextValue = simpleEditText.getText().toString();
 //        int colourNum = Integer.parseInt(editTextValue);
 //        if (colourNum >= 8 && colourNum <= 12)

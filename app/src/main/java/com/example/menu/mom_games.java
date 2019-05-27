@@ -19,7 +19,7 @@ public class mom_games extends Activity {
         game1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mom_games.this, wordSearch_mom.class);
+                Intent intent = new Intent(mom_games.this, instructions_word_search_mom.class);
                 startActivity(intent);
             }
         });

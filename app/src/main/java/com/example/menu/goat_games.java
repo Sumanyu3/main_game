@@ -21,6 +21,7 @@ public class goat_games extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(goat_games.this, instructions_word_search_goat.class);
                 startActivity(intent);
+
             }
         });
         game2.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +29,7 @@ public class goat_games extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(goat_games.this, instructions_puzzle_goat.class);
                 startActivity(intent);
+
             }
         });
         game3.setOnClickListener(new View.OnClickListener() {

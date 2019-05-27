@@ -10,13 +10,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.VideoView;
 
-public class instructions_puzzle_goat extends Activity {
+public class instructions_puzzle_supergirls extends Activity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_instructions_puzzle_goat);
+        setContentView(R.layout.activity_instructions_puzzle_supergirls);
         final VideoView instr = findViewById(R.id.instr);
         String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.instructions_puzzle_edited_trim;
         Uri uri = Uri.parse(videoPath);
@@ -32,7 +32,7 @@ public class instructions_puzzle_goat extends Activity {
         next_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(instructions_puzzle_goat.this, puzzle_goat.class);
+                Intent intent = new Intent(instructions_puzzle_supergirls.this, puzzle_supergirls.class);
                 startActivity(intent);
             }
         });

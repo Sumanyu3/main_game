@@ -37,70 +37,111 @@
                 android:layout_height="match_parent"
                 android:visibility="visible"
                 tools:context=".MainActivity">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="150dp"
+                    android:layout_height="155dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/goatButton"
+                    app:layout_constraintEnd_toStartOf="@+id/goatButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/goatButton"
+                    app:srcCompat="@drawable/icon_goat_1" />
 
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="283dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/supergirlsButton"
+                    app:layout_constraintEnd_toStartOf="@+id/supergirlsButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/supergirlsButton"
+                    app:srcCompat="@drawable/icon_super_1" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="155dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/momButton"
+                    app:layout_constraintEnd_toStartOf="@+id/momButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/momButton"
+                    app:srcCompat="@drawable/icon_kawandi_1" />
                 <Button
                     android:id="@+id/goatButton"
                     android:layout_width="200dp"
                     android:layout_height="80dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
                     android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/shadow"
-                    android:text="Goat"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/shadow3"
+                    android:text="Button"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
                     android:visibility="visible"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.794"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.192" />
+                    app:layout_constraintVertical_bias="0.188" />
 
 
                 <Button
                     android:id="@+id/momButton"
                     android:layout_width="200dp"
                     android:layout_height="80dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
                     android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@drawable/shadow2"
-                    android:text="mom game"
+                    android:text="Button"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
                     android:visibility="visible"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.794"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.499" />
 
                 <Button
                     android:id="@+id/supergirlsButton"
                     android:layout_width="200dp"
                     android:layout_height="80dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
                     android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/shadow3"
-                    android:text="Supergirls"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/shadow"
+                    android:text="Button"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
                     android:visibility="visible"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.794"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.813" />
-
+                    app:layout_constraintVertical_bias="0.811" />
             </android.support.constraint.ConstraintLayout>
         </FrameLayout>
 
@@ -111,7 +152,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@drawable/nav_bg"
+        android:visibility="visible"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/drawer_menu"
-        android:background="@android:color/black"/>
+        app:menu="@menu/drawer_menu" />
 </android.support.v4.widget.DrawerLayout>

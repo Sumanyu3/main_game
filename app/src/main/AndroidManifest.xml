@@ -9,10 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".instructions_word_search_mom"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:noHistory="true"/>
+        <activity android:name=".instructions_word_search_supergirls"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:noHistory="true"/>
+        <activity android:name=".instructions_puzzle_supergirls"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:noHistory="true"/>
+        <activity android:name=".puzzle_supergirls"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"/>
         <activity
             android:name=".dragDrop_mom"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"/>
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
         <activity
             android:name=".colorPicker_mom"
             android:screenOrientation="portrait"
@@ -28,11 +43,13 @@
         <activity
             android:name=".instructions_puzzle_goat"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:noHistory="true"/>
         <activity
             android:name=".instructions_word_search_goat"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:noHistory="true"/>
         <activity
             android:name=".wordSearch_goat"
             android:screenOrientation="portrait"

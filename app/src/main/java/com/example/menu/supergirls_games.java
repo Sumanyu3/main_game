@@ -14,10 +14,18 @@ public class supergirls_games extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_supergirls_games);
         Button game1 = findViewById(R.id.game1);
+        Button game2 = findViewById(R.id.game2);
         game1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(supergirls_games.this, wordSearch_supergirls.class);
+                Intent intent = new Intent(supergirls_games.this, instructions_word_search_supergirls.class);
+                startActivity(intent);
+            }
+        });
+        game2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(supergirls_games.this, instructions_puzzle_supergirls.class);
                 startActivity(intent);
             }
         });
