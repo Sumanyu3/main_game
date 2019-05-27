@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
-public class dragDrop_goat extends AppCompatActivity implements View.OnTouchListener, GestureDetector.OnGestureListener, View.OnDragListener {
+public class dragDrop_goat extends Activity implements View.OnTouchListener, GestureDetector.OnGestureListener, View.OnDragListener {
 
     int windowwidth;
     int windowheight;
